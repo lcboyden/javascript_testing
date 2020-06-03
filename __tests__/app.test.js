@@ -2,10 +2,10 @@ import {
   // methods,
   // method1,
   // method2,
-  arraySum,
-  evensOnlyArray,
-  doubleArray,
   originalArray,
+  doubleArray,
+  evensOnlyArray,
+  arraySum,
   allNumbersGreaterThanZero,
 } from "../app";
 import { TestScheduler } from "jest";
@@ -34,8 +34,20 @@ import { TestScheduler } from "jest";
 //   }); 
 // });
 
-describe("allNumbersGreaterThanZero", () => {
-  test("should return all numbers greater than zero", () => {
-    expect(allNumbersGreaterThanZero([1, 2, 3, 4])).toBeGreaterThan(0);
+// describe("allNumbersGreaterThanZero", () => {
+//   test("should return all numbers greater than zero", () => {
+//     expect(allNumbersGreaterThanZero([1, 2, 3, 4])).toBe(true);
+//   });
+// });
+
+// describe("someNumbersAreOdd", () => {
+//   test("should return that some numbers are odd", () => {
+//     expect(someNumbersAreOdd([1, 2, 3, 4])).toBe(true);
+//   });
+// });
+
+describe("evensOnlyAndDoubleArray", () => {
+  test("filters for even and doubles array", () => {
+    expect(evensOnlyAndDoubleArray).toEqual([4,8]);
   });
 });

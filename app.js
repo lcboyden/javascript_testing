@@ -22,18 +22,28 @@ export const arraySum = (arr) => {
 };
 
 export const allNumbersGreaterThanZero = (arr) => {
+  return arr.every((number => number > 0));
+};
+
+// this one needs work
+export const someNumbersAreOdd = (arr) => {
+//  return arr.some((number => number % 1 === 0));
   
+  // let someOdd = arr.some((number => {
+  //   if (number % 1 === 0 )
+  //   return
+  // }))
+  // return someOdd;
+};
+
+export const evensOnlyAndDoubleArray = (arr) => {
+  .filter(evensOnlyArray)
+  .map(doubleArray)
 };
 
 
-// ARRAY ITERATOR METHODS
-
-// // return true if every item greater than 0
-// allNumbersGreaterThanZero(numberArray); // => true; use every
-
-// // return true if one or more items in array are odd
-// someNumbersAreOdd(numberArray); // => true; use some
-
+//okay, this is as far as i got :( 
+  
 // // return array double and even
 // evensOnlyAndDoubleArray(numberArray); // => [4,8]; // use map and filter
 
